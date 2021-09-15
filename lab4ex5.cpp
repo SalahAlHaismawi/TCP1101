@@ -6,6 +6,7 @@ Finally, if the average bill is less than $25, the output should contain a messa
 conserving water. Use the sample run below as a model for your output. */
 
 #include <iostream>
+#include <iomanip>
 using namespace std;
 int main()
 {
@@ -17,7 +18,7 @@ float quarter4;
 float average;
 
 //requesting int
-
+ 
 cout << "Please input your water bill for quarter 1" << endl;
 cin >> quarter1;
 
@@ -30,20 +31,21 @@ cin >> quarter3;
 cout << "Please input your water bill for quarter 4" << endl;
 cin >> quarter4;
 
- average = (quarter1 + quarter2 + quarter3 + quarter4)/4;
+cout<<setprecision(2)<<fixed<<showpoint;
 
+ average = (quarter1 + quarter2 + quarter3 + quarter4)*0.08333;
 
     if (average<25)
     
-        cout << "Your average bill is " << average  << "$ You are using a saving water, Keep at it!!" << endl;
+        cout << "Your average bill is $ " << average  << " You are using a saving water, Keep at it!!" << endl;
     
     
 
                 else if (75>average && average>25 )
-                 cout << "Your average bill is " << average << "$ You are using a typical amount of water ." << endl;
+                 cout << "Your average bill is $ " << average << " You are using a typical amount of water ." << endl;
 
                     else
-                    cout << "Your average bill is " << average  << "$ You are using excessive amounts of water ." << endl;
+                    cout << "Your average bill is $ " << average  << " You are using excessive amounts of water ." << endl;
     
 return 0;
 }
