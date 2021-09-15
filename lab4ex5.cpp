@@ -4,7 +4,7 @@ output should include a message indicating that too much water is being used. If
 least $25 but no more than $75, the output should indicate that a typical amount of water is being used.
 Finally, if the average bill is less than $25, the output should contain a message praising the user for
 conserving water. Use the sample run below as a model for your output. */
-
+//Salah Fayeq Y. ALhaismawi
 #include <iostream>
 #include <iomanip>
 using namespace std;
